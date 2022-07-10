@@ -16,7 +16,11 @@ public class Headers {
 	@FindBy (xpath = "//a[@class='content reports']") 
 	private WebElement report ;
 	
-
+	@FindBy (xpath = "//a[@class='content users']") 
+	private WebElement user;
+	
+	@FindBy (xpath = "//a[text()='Logout']") 
+	private WebElement logout;
 	
 	public Headers(WebDriver driver)  // driver1 = driver = new chromeDriver()
 	{
