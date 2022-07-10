@@ -7,6 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Headers {
 
+	
+	SOP("hi") ;
 	@FindBy (xpath = "//a[@class='content tt']") 
 	private WebElement timetrack ;
 	
