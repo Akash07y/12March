@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite1234]" parallel="tests">
+  <test thread-count="2" name="FirefoxBrowser(failed)" parallel="tests">
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="tests.VerifySanityTest">
+        <methods>
+          <include name="toVerifyTaskButton"/>
+          <include name="loginToApplication"/>
+          <include name="logoutFromApplication"/>
+          <include name="closedBrowser"/>
+          <include name="createPOMOobjects"/>
+          <include name="clearObject"/>
+          <include name="toVerifyReportButton"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- tests.VerifySanityTest -->
+    </classes>
+  </test> <!-- FirefoxBrowser(failed) -->
+</suite> <!-- Failed suite [Suite1234] -->
